@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  body {
+    background: #2a2a66;
+  }
+  
+  .btn {
+    width: 150px;
+    height: 50px;
+    border: none;
+    padding: 1rem;
+    background: linear-gradient(45deg, #3d5ee3 70%, #4a4a4a 10%, #4a4a4a 20%) right;
+    background-size: 300%;
+    transition: 1s ease;
+    color: white;
+    border-radius: 25px;
+  }
+  
+  .btn:hover {
+    background-position: left;
+  }

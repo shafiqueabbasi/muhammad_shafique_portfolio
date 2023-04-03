@@ -1,0 +1,75 @@
+body
+{
+  background-color: black;
+  color:white;
+}
+
+#sent1,#sent2,#sent3
+{
+   overflow: hidden;
+   white-space: nowrap;
+   opacity: 0;
+   font-size: 30px;
+}
+
+#sent1
+{
+   width: 8em;
+   animation: sentence1 4s steps(40,end) 1s 1 normal forwards;
+}
+
+#sent2
+{
+   width: 15em;
+   animation: sentence2 6s steps(60,end) 4s 1 normal forwards;
+}
+
+#sent3
+{
+   width: 7em;
+   animation: sentence3 5s steps(50,end) 8s 1 normal forwards;
+}
+
+#workLink
+{
+   overflow: hidden;
+   white-space: nowrap;
+   opacity: 0;
+   color: var(--pr1Color);
+   text-decoration: none;
+   font-size: 25px; 
+   animation: wLink 4s steps(30,end) 12s 1 normal forwards;
+}
+
+#workLink:hover
+{
+  text-decoration:underline;
+}
+
+@keyframes sentence1
+{
+   0% {width: 0; opacity: 0;}
+   1% {opacity: 1;}
+   100% {width: 100%; opacity: 1;}
+}
+
+@keyframes sentence2
+{
+   0% {width: 0; opacity: 0;}
+   1% {opacity: 1;}
+   100% {width: 100%; opacity: 1;}
+}
+
+@keyframes sentence3 
+{
+   0% {width: 0; opacity: 0;}
+   1% {opacity: 1;}
+   100% {width: 100%; opacity: 1;}
+}
+
+@keyframes wLink 
+{
+   0% {width: 0; opacity: 0;}
+   1% {opacity: 1;}
+   100% {width: 100%;opacity: 1;}
+}
